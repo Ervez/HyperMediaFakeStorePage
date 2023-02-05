@@ -15,11 +15,6 @@ $(document).ready(function() {
       const basketTotal = basket.reduce((sum, product) => {
         return (sum += product.price);
       }, 0);
-    
-      basketTotal > 0
-        ? basketClearBtn.classList.add("active")
-        : basketClearBtn.classList.remove("active");
-    
           basketAmountSpan.innerHTML = `${basket.length}`;
 
       $(".basket__amount").addClass("active");
@@ -53,15 +48,18 @@ $(document).ready(function() {
    
     
     const basketAmountSpan = document.querySelector(".basket__amount");
-    const basketClearBtn = document.querySelector(".basket__clear_btn");
     
     const clearBasket = () => {
       basketAmountSpan.innerHTML = "Koszyk";
-      basketClearBtn.classList.remove('active');
       $(".basket__amount").removeClass("active");
       basket = [];
     };
     
-    basketClearBtn.addEventListener("click", clearBasket);
+
+    $(".basket__amount").click(function(){
+      clearBasket();
+    })
     renderProducts(currentProducts);
+
+    
 });
