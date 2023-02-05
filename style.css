@@ -322,18 +322,19 @@ footer a{
   }
 
   .basket__amount{
-    position:fixed;
+    position:absolute;
     margin-left: 20px;
-    top: 20px;
+    top: 16px;
     display: none;
     color:  black !important;
     background-color: yellow;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 17px !important;
+    font-size: 15px !important;
+    padding: 3px;
     font-weight: 800;
-    width: 20px;
+    width: 21px;
     align-items: center;
 }
 
