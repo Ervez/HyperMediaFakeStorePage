@@ -302,6 +302,12 @@ footer a{
     }
   }
 
+  @media only screen and (max-width: 980px) {
+    .products_item{
+        max-width: 80%;
+    }
+  }
+
   .basket__clear_btn{
     padding: 2px;
   }
@@ -358,6 +364,20 @@ footer a{
         margin-left: auto; 
         margin-right: 20px;
     }
+
+    .cart-button{
+        width: 150px !important;
+    }
+
+    .cart-button span {
+        position: unset !important;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        transform: none !important;
+    }
+
 }
 .fa {
     padding: 10px;
